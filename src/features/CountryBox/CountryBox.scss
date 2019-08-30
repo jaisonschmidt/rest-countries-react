@@ -1,38 +1,37 @@
 @import "../../assets/scss/variables";
-
+@import "../../assets/scss/mixins";
 #{$dark-selector} .countryBox {
-  background: $dark-elements;
-  color: $dark-text;
+    background: $dark-elements;
+    color: $dark-text;
 }
 
 .countryBox {
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.08);
-  margin-bottom: 70px;
-  overflow: hidden;
-  width: 265px;
-  .-linkcountrybox {
-    color: inherit;
-    text-decoration: inherit;
-  }
-  .-flagimagewrapper {
-    height: 160px;
+    @include light-shadow;
+    margin-bottom: 70px;
     overflow: hidden;
-  }
-  .-flagimage {
-    height: 160px;
-    object-fit: cover;
     width: 265px;
-  }
-  .-flaginfo {
-    font-size: 14px;
-    padding: 30px 25px 40px 25px;
-  }
-  .-countryname {
-    font-size: 16px;
-    font-weight: 800;
-    height: 32px;
-    margin-bottom: 5px;
-    overflow: hidden;
-  }
+    .-linkcountrybox {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    .-flagimagewrapper {
+        height: 160px;
+        overflow: hidden;
+    }
+    .-flagimage {
+        height: 160px;
+        object-fit: cover;
+        width: 265px;
+    }
+    .-flaginfo {
+        font-size: 14px;
+        padding: 30px 25px 40px 25px;
+    }
+    .-countryname {
+        font-size: 16px;
+        font-weight: 800;
+        height: 32px;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
 }

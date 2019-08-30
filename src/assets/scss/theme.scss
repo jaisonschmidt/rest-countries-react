@@ -1,77 +1,71 @@
 @import "variables";
 @import "mixins";
 @import "reset";
-
 html.theme-transition,
 html.theme-transition *,
 html.theme-transition *:before,
 html.theme-transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
 }
 
 body {
-  background-color: #FAFAFA;
-  font-family: 'Nunito Sans', sans-serif;
-  &[data-theme='dark'] {
-      background: $dark-background;
-  }
+    background-color: #FAFAFA;
+    font-family: 'Nunito Sans', sans-serif;
+    &[data-theme='dark'] {
+        background: $dark-background;
+    }
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1440px;
-  .row {
-      padding: 0 15px;
-
-      @include desktop {
-        padding: 0 80px;
-      }
-
-  }
+    margin: 0 auto;
+    max-width: 1440px;
+    .row {
+        padding: 0 15px;
+        @include desktop {
+            padding: 0 80px;
+        }
+    }
 }
 
 // descriptor component
 .descriptor {
-  display: flex;
-  line-height: 22px;
-  .-label {
-    font-weight: 600;
-    margin-bottom: 10px;
-    margin-right: 6px;
-  }
+    display: flex;
+    line-height: 22px;
+    .-label {
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-right: 6px;
+    }
 }
 
 // default button
 #{$dark-selector} .btn {
-  background: $dark-elements;
-  color: $dark-text;
+    background: $dark-elements;
+    color: $dark-text;
 }
 
 .btn {
-  align-items: center;
-  border: transparent;
-  background: $light-elements;
-  @include default-element;
-  display: inline-flex;
-  justify-content: center;
-  min-width: 105px;
-  outline: none;
-  padding: 10px;
-  text-decoration: none;
-
-  @include desktop {
-    padding: 15px;
-  }
-
-  .-icobtn {
-    padding-right: 10px;
-  }
-
-  &.sm {
-    font-size: 14px;
-    min-width: 96px;
-    padding: 8px;
-    text-align: center;
-  }
+    align-items: center;
+    border: transparent;
+    background: $light-elements;
+    @include light-shadow;
+    display: inline-flex;
+    justify-content: center;
+    min-width: 105px;
+    outline: none;
+    padding: 10px;
+    text-decoration: none;
+    @include desktop {
+        padding: 15px;
+    }
+    .-icobtn {
+        padding-right: 10px;
+    }
+    &.sm {
+        font-size: 14px;
+        min-width: 96px;
+        padding: 8px;
+        text-align: center;
+    }
 }
