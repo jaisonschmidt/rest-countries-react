@@ -1,0 +1,21 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.countryList {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .-lastalign {
+    width: 265px;
+  }
+
+}

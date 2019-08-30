@@ -1,0 +1,111 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+#{$dark-selector} .countryDetail {
+  color: $dark-text;
+}
+
+.countryDetail {
+  .-headerwrapper {
+    padding: 40px 0 65px 0;
+  }
+
+  .-countrydetailwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  .-countryimagagewrapper {
+    @include desktop {
+      flex-basis: 560px;
+    }
+  }
+
+  .-countryflagimage {
+    width: 100%;
+  }
+
+  .-countrydetailinfowrapper {
+    @include desktop {
+      flex-basis: 595px;
+      padding-left: 20px;
+    }
+  }
+
+  .-countrydatawrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    .-column {
+      flex-grow: 1;
+      @include desktop {
+        width: 50%;
+      }
+    }
+
+    .-rightcolumn {
+      @include mobile {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  .-countryname {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 50px 0 30px 0;
+
+    @include desktop {
+      font-size: 25px;
+    }
+  } 
+
+  .-bordercountrieswrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 50px;
+
+    @include desktop {
+      align-items: center;
+      flex-direction: row;
+      margin-top: 75px;
+    }
+  }
+
+  .-labelbordercountries {
+    white-space: nowrap;
+    @include mobile {
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    @include desktop {
+      padding-right: 15px;
+    }
+  }
+
+  .-linkscontainer {
+    .btn {
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .-linkbordercountry {
+    margin-bottom: 8px;
+  }
+}

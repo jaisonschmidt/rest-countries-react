@@ -1,0 +1,13 @@
+$dark-selector: "body[data-theme='dark']";
+
+$light-background: hsl(0, 0%, 98%);
+$light-elements: hsl(0, 0%, 100%);
+$light-input: hsl(0, 0%, 52%);
+$light-text: hsl(200, 15%, 8%);
+
+$dark-background: hsl(207, 26%, 17%);
+$dark-elements: hsl(209, 23%, 22%);
+$dark-text: hsl(0, 0%, 100%);
+
+$mobile: "only screen and (max-width : 667px)";
+$desktop: "only screen and (min-width : 668px)";

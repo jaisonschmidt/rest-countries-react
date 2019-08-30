@@ -1,0 +1,131 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+#{$dark-selector} .searchFilter {
+  color: $dark-text;
+
+  .-inputsearchwrapper, 
+  .-filterbyregionbtn, 
+  .-filterbyregionitens {
+    background-color: $dark-elements;
+    color: $dark-text;
+  }
+
+  .-inputsearch,
+  .-regionitem {
+    color: $dark-text;
+  }
+
+  ::placeholder { 
+    color: $dark-text;
+  }
+  
+  :-ms-input-placeholder { 
+    color: $dark-text;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: $dark-text;
+  }
+
+}
+
+.searchFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  @include desktop {
+    padding: 45px 0;
+  }
+  
+  @include desktop {
+    flex-direction: row;
+  }
+
+  .-inputsearchwrapper {
+    align-items: center;
+    background-color: $light-elements;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.04);
+    display: flex;
+    flex-grow: 1;
+    max-width: 480px;
+  }
+
+  .-inputsearch {
+    background: transparent;
+    border: transparent;
+    outline: none;
+    padding: 15px 10px;
+    width: 100%;
+
+    @include desktop {
+      padding: 25px 10px 25px 0;
+    }
+  }
+
+  .-icosearch {
+    margin-top: -4px; // melhora o alinhamento
+    text-align: center;
+    width: 75px;
+  }
+
+  .-filterbyregionwrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    position: relative;
+
+    @include desktop {
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  .-filterbyregionbtn {
+    background-color: $light-elements;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.04);
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    outline: none;
+    padding: 15px 25px;
+    width: 200px;
+
+    @include desktop {
+      padding: 25px;
+    }
+
+    &.-active ~ .-filterbyregionitens {
+      display: block;
+    }
+  }
+
+  .-filterbyregionitens {
+    background-color: $light-elements;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.04);
+    display: none;
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+
+    @include desktop {
+      top: 75px;
+    }
+  }
+
+  .-regionitem {
+    color: $light-text;
+    display: block;
+    font-size: 12px;
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+}
