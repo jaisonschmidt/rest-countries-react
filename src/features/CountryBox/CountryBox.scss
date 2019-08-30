@@ -3,6 +3,7 @@
 #{$dark-selector} .countryBox {
     background: $dark-elements;
     color: $dark-text;
+    @include dark-shadow;
 }
 
 .countryBox {

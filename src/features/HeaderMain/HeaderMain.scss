@@ -3,6 +3,7 @@
 #{$dark-selector} .headerMain {
     background: $dark-elements;
     color: $dark-text;
+    @include dark-shadow;
     .-btndarkmode {
         color: $dark-text;
     }

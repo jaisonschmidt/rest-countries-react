@@ -8,6 +8,10 @@
         background-color: $dark-elements;
         color: $dark-text;
     }
+    .-inputsearchwrapper,
+    .-filterbyregionbtn {
+        @include dark-shadow;
+    }
     .-inputsearch,
     .-regionitem {
         color: $dark-text;

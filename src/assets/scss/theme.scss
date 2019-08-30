@@ -43,6 +43,7 @@ body {
 #{$dark-selector} .btn {
     background: $dark-elements;
     color: $dark-text;
+    @include dark-shadow;
 }
 
 .btn {
