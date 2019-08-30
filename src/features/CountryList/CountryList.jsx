@@ -102,7 +102,6 @@ class CountryList extends React.Component {
           </div>
 
           <div className="countryList">
-            {console.log(this.state.countries)}
             {this.state.countries
               .filter(country =>
                 country.name

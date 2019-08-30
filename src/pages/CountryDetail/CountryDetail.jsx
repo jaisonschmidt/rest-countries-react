@@ -92,7 +92,6 @@ class CountryDetail extends React.Component {
       <div>
         <HeaderMain />
 
-        {console.log(this.state.country)}
         <div className="container">
           <div className="row">
             <div className="countryDetail">
